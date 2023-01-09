@@ -138,33 +138,6 @@ public class SpringBootBeanConfigurationsApplication {
 
         ApplicationContext applicationContext = SpringApplication.run(SpringBootBeanConfigurationsApplication.class, args);
 
-        //Customer
-
-        Customer customer = applicationContext.getBean(Customer.class);
-        customer.setId(101);
-        customer.setName("Arjan");
-        customer.setAddress("Jaliya (manaji)");
-
-        System.out.println(customer);
-        
-        //student
-
-        Student student = applicationContext.getBean(Student.class);
-
-        student.setId(102);
-        student.setName("Ajay");
-
-        System.out.println(student);
-
-    }
-
-}@SpringBootApplication
-public class SpringBootBeanConfigurationsApplication {
-
-    public static void main(String[] args) {
-
-        ApplicationContext applicationContext = SpringApplication.run(SpringBootBeanConfigurationsApplication.class, args);
-
         //Customer using xml configuration
 
         Customer customer = applicationContext.getBean(Customer.class);
